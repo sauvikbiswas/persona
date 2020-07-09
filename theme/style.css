@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&family=PT+Serif&display=swap');
+
+/* Colour-variable declarations */
+:root {
+  --tag-text: #444444;
+  --tag-background: #eeeeee;
+  --date-text: #444444;
+  --date-background: #fdfdfd;
+  --link-text: #ff0000;
+  --link-hover-highlight: #ffffe0;
+  --back-text: #ff0000;
+  --back-background: #f5f5f5;
+  --back-hover-highlight: #ff0000;
+  --back-hover-background: #ffffe0;
+}
+
+body {
+  max-width: 768px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.post-title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 300%;
+  padding: 15px 0px;
+}
+
+.post-tag, .post-date-tag {
+  font-family: 'PT Mono', monospace;
+  padding: 2px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.post-tag {
+  font-size: 64%;
+  background-color: var(--tag-background);
+  color: var(--tag-text);
+}
+
+.post-date-tag {
+  font-size: 64%;
+  background-color: var(--date-background);
+  color: var(--date-text);
+  margin: 0px 5px 0px 0px;
+}
+
+.post-link {
+  margin: 0px 5px 0px 0px;
+}
+
+.post-content {
+  font-family: 'PT Serif', serif;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-text);
+}
+
+a:hover {
+  background-color: var(--link-hover-highlight);
+}
+
+pre.wp-block-verse {
+  font-family: 'PT Mono', monospace;
+  font-size: 95%;
+  line-height: 1.4;
+  display: contents;
+}
+
+.post-back {
+  font-family: 'PT Sans', sans-serif;
+  margin: 10px 0px 0px 0px;
+  font-size: 150%;
+  font-weight: regular;
+  width: 100%;
+  display: grid;
+}
+
+.post-back a {
+  padding: 5px 5px;
+  border-radius: 2px;
+  vertical-align: middle;
+  text-decoration: none;
+  background-color: var(--back-background);
+  color: var(--back-text);
+}
+
+.post-back a:hover {
+  text-decoration: none;
+  background-color: var(--back-hover-background);
+  color: var(--back-hover-highlight);
+}
